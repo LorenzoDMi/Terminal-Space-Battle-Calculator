@@ -1,0 +1,7 @@
+# Defender fleet
+car_meridian
+frg_shrike x3
+str_javelin x12
+ftr_wasp x16
+mch_ronin ace=ace_thorne
+mch_ronin x8

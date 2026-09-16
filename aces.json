@@ -1,0 +1,10 @@
+{
+  "aces": {
+    "ace_thorne": {
+      "name": "Captain Thorne",
+      "accuracy_bonus": 0.08,
+      "evasion_bonus": 0.05,
+      "hp_bonus": 15
+    }
+  }
+}

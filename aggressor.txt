@@ -1,0 +1,4 @@
+# Aggressor fleet
+bsh_dominion
+dst_pilum x3
+frg_shrike x4

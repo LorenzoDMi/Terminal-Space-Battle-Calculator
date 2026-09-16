@@ -1,0 +1,373 @@
+{
+  "schema_version": "0.2",
+  "unit_classes": {
+    "bsh_dominion": {
+      "name": "Dominion-class Battleship",
+      "type": "battleship",
+      "point_cost": 900,
+      "hp": 2400,
+      "hardness": 55,
+      "maneuverability": 0.0,
+      "initiative": 2,
+      "weapons": [
+        {
+          "id": "spinal_lance",
+          "name": "Spinal Mass Driver",
+          "category": "antiship",
+          "damage_min": 260,
+          "damage_max": 420,
+          "penetration": 90,
+          "accuracy": 0.65,
+          "tracking": 0.05,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "broadside",
+          "name": "Broadside Battery",
+          "category": "antiship",
+          "damage_min": 60,
+          "damage_max": 95,
+          "penetration": 48,
+          "accuracy": 0.7,
+          "tracking": 0.2,
+          "shots": 6,
+          "ammo": null,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "pd_net",
+          "name": "Point Defence Net",
+          "category": "aa",
+          "damage_min": 18,
+          "damage_max": 30,
+          "penetration": 12,
+          "accuracy": 0.8,
+          "tracking": 0.9,
+          "shots": 10,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "battleship": 3,
+        "cruiser": 4,
+        "carrier": 5,
+        "destroyer": 2,
+        "frigate": 1,
+        "transport": 1
+      },
+      "escort": null
+    },
+
+    "crs_aurelian": {
+      "name": "Aurelian-class Cruiser",
+      "type": "cruiser",
+      "point_cost": 480,
+      "hp": 1100,
+      "hardness": 40,
+      "maneuverability": 0.08,
+      "initiative": 4,
+      "weapons": [
+        {
+          "id": "main_battery",
+          "name": "Main Battery",
+          "category": "antiship",
+          "damage_min": 110,
+          "damage_max": 165,
+          "penetration": 62,
+          "accuracy": 0.68,
+          "tracking": 0.15,
+          "shots": 4,
+          "ammo": null,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "flak",
+          "name": "Flak Battery",
+          "category": "aa",
+          "damage_min": 20,
+          "damage_max": 32,
+          "penetration": 14,
+          "accuracy": 0.76,
+          "tracking": 0.85,
+          "shots": 8,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "cruiser": 4,
+        "battleship": 3,
+        "carrier": 4,
+        "destroyer": 3,
+        "frigate": 2,
+        "transport": 1
+      },
+      "escort": null
+    },
+
+    "dst_pilum": {
+      "name": "Pilum-class Destroyer",
+      "type": "destroyer",
+      "point_cost": 260,
+      "hp": 520,
+      "hardness": 30,
+      "maneuverability": 0.15,
+      "initiative": 5,
+      "weapons": [
+        {
+          "id": "torpedo_rack",
+          "name": "Torpedo Rack",
+          "category": "antiship",
+          "damage_min": 130,
+          "damage_max": 190,
+          "penetration": 70,
+          "accuracy": 0.55,
+          "tracking": 0.1,
+          "shots": 2,
+          "ammo": 6,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "flak",
+          "name": "Flak Cluster",
+          "category": "aa",
+          "damage_min": 22,
+          "damage_max": 34,
+          "penetration": 15,
+          "accuracy": 0.75,
+          "tracking": 0.85,
+          "shots": 7,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "cruiser": 3,
+        "battleship": 2,
+        "carrier": 4,
+        "destroyer": 3,
+        "frigate": 2,
+        "transport": 2,
+        "fighter": 1,
+        "striker": 1,
+        "mecha": 1
+      },
+      "escort": {
+        "chance": 0.45,
+        "max_intercepts_per_round": 2,
+        "protects": ["battleship", "carrier", "cruiser"]
+      }
+    },
+
+    "frg_shrike": {
+      "name": "Shrike-class Escort Frigate",
+      "type": "frigate",
+      "point_cost": 140,
+      "hp": 240,
+      "hardness": 18,
+      "maneuverability": 0.25,
+      "initiative": 7,
+      "weapons": [
+        {
+          "id": "light_gun",
+          "name": "Light Coilgun",
+          "category": "antiship",
+          "damage_min": 40,
+          "damage_max": 62,
+          "penetration": 30,
+          "accuracy": 0.68,
+          "tracking": 0.35,
+          "shots": 3,
+          "ammo": null,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "pd_array",
+          "name": "PD Array",
+          "category": "aa",
+          "damage_min": 20,
+          "damage_max": 32,
+          "penetration": 14,
+          "accuracy": 0.82,
+          "tracking": 0.95,
+          "shots": 8,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "fighter": 4,
+        "striker": 4,
+        "mecha": 3,
+        "destroyer": 2,
+        "frigate": 2,
+        "transport": 1
+      },
+      "escort": {
+        "chance": 0.6,
+        "max_intercepts_per_round": 3,
+        "protects": ["battleship", "carrier", "cruiser", "destroyer", "transport"]
+      }
+    },
+
+    "car_meridian": {
+      "name": "Meridian-class Carrier",
+      "type": "carrier",
+      "point_cost": 700,
+      "hp": 1500,
+      "hardness": 34,
+      "maneuverability": 0.02,
+      "initiative": 3,
+      "hangar_capacity": 48,
+      "launch_per_round": 12,
+      "weapons": [
+        {
+          "id": "pd_net",
+          "name": "Point Defence Net",
+          "category": "aa",
+          "damage_min": 18,
+          "damage_max": 28,
+          "penetration": 12,
+          "accuracy": 0.78,
+          "tracking": 0.9,
+          "shots": 10,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "fighter": 4,
+        "striker": 4,
+        "mecha": 4
+      },
+      "escort": null
+    },
+
+    "trn_bulwark": {
+      "name": "Bulwark-class Transport",
+      "type": "transport",
+      "point_cost": 90,
+      "hp": 700,
+      "hardness": 12,
+      "maneuverability": 0.05,
+      "initiative": 1,
+      "weapons": [],
+      "target_priorities": {},
+      "escort": null
+    },
+
+    "mch_ronin": {
+      "name": "Ronin-type Mecha",
+      "type": "mecha",
+      "point_cost": 75,
+      "hp": 110,
+      "hardness": 14,
+      "maneuverability": 0.55,
+      "initiative": 9,
+      "weapons": [
+        {
+          "id": "beam_glaive",
+          "name": "Beam Glaive",
+          "category": "anti_mecha",
+          "damage_min": 55,
+          "damage_max": 80,
+          "penetration": 26,
+          "accuracy": 0.7,
+          "tracking": 0.75,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "shaped_charge",
+          "name": "Shaped Charge Lance",
+          "category": "antiship",
+          "damage_min": 95,
+          "damage_max": 140,
+          "penetration": 60,
+          "accuracy": 0.5,
+          "tracking": 0.4,
+          "shots": 1,
+          "ammo": 6,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "mecha": 4,
+        "fighter": 3,
+        "striker": 3,
+        "cruiser": 2,
+        "battleship": 2,
+        "carrier": 3
+      },
+      "escort": null
+    },
+
+    "ftr_wasp": {
+      "name": "Wasp-class Fighter",
+      "type": "fighter",
+      "point_cost": 30,
+      "hp": 45,
+      "hardness": 0,
+      "maneuverability": 0.5,
+      "initiative": 10,
+      "weapons": [
+        {
+          "id": "autocannon",
+          "name": "Nose Autocannon",
+          "category": "aa",
+          "damage_min": 18,
+          "damage_max": 26,
+          "penetration": 4,
+          "accuracy": 0.72,
+          "tracking": 0.7,
+          "shots": 4,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "fighter": 4,
+        "striker": 4,
+        "mecha": 2
+      },
+      "escort": null
+    },
+
+    "str_javelin": {
+      "name": "Javelin-class Striker",
+      "type": "striker",
+      "point_cost": 45,
+      "hp": 60,
+      "hardness": 2,
+      "maneuverability": 0.45,
+      "initiative": 8,
+      "weapons": [
+        {
+          "id": "ship_killer",
+          "name": "Ship-Killer Missiles",
+          "category": "antiship",
+          "damage_min": 110,
+          "damage_max": 160,
+          "penetration": 65,
+          "accuracy": 0.6,
+          "tracking": 0.3,
+          "shots": 2,
+          "ammo": 4,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "battleship": 4,
+        "carrier": 5,
+        "cruiser": 3,
+        "destroyer": 1,
+        "transport": 2
+      },
+      "escort": null
+    }
+  }
+}
