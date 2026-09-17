@@ -548,3 +548,17 @@ void print_outcome(BattleOutcome outcome) {
             std::cout << "Stalemate - max round count reached with no decisive result.\n"; break;
     }
 }
+
+void print_survivors(const std::vector<UnitInstance>& fleet, const char* side_label) {
+    std::cout << "\n" << side_label << " surviving assets:\n";
+    bool any = false;
+    for (const auto& u : fleet) {
+        if (!u.alive) continue;
+        any = true;
+        std::cout << "  " << format_unit_label(u) << ": " << u.current_hp << "/" << u.unit_class->hp << " HP";
+        if (u.rearm_status == RearmStatus::Rearming)
+            std::cout << " (rearming, " << u.rearm_turns_remaining << " turns left)";
+        std::cout << "\n";
+    }
+    if (!any) std::cout << "  (none)\n";
+}

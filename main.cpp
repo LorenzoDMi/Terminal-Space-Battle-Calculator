@@ -34,6 +34,8 @@ int main() {
     BattleOutcome outcome = run_battle(aggressor, defender, aggressor_policy, defender_policy);
 
     print_outcome(outcome);
+    print_survivors(aggressor, "Aggressor");
+    print_survivors(defender, "Defender");
     report_ace_losses(aggressor);
     report_ace_losses(defender);
 

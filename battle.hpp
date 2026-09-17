@@ -72,6 +72,11 @@ BattleOutcome run_battle(
 
 void print_outcome(BattleOutcome outcome);
 
+// Lists every unit still alive at the end of the battle, with its current
+// and max HP, and a note if it's mid-rearm when the battle ended. Call once
+// per side, after print_outcome.
+void print_survivors(const std::vector<UnitInstance>& fleet, const char* side_label);
+
 // How many rounds a rearm cycle takes once a plane/mecha docks. Single knob.
 constexpr int kRearmDurationRounds = 2;
 
