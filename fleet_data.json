@@ -45,7 +45,7 @@
           "penetration": 12,
           "accuracy": 0.8,
           "tracking": 0.9,
-          "shots": 10,
+          "shots": 8,
           "ammo": null,
           "valid_targets": "small_craft"
         }
@@ -92,7 +92,7 @@
           "penetration": 14,
           "accuracy": 0.76,
           "tracking": 0.85,
-          "shots": 8,
+          "shots": 6,
           "ammo": null,
           "valid_targets": "small_craft"
         }
@@ -139,7 +139,7 @@
           "penetration": 15,
           "accuracy": 0.75,
           "tracking": 0.85,
-          "shots": 7,
+          "shots": 5,
           "ammo": null,
           "valid_targets": "small_craft"
         }
@@ -193,7 +193,7 @@
           "penetration": 14,
           "accuracy": 0.82,
           "tracking": 0.95,
-          "shots": 8,
+          "shots": 6,
           "ammo": null,
           "valid_targets": "small_craft"
         }
@@ -221,6 +221,7 @@
       "hardness": 34,
       "maneuverability": 0.02,
       "initiative": 3,
+      "rearm_capacity": 48,
       "hangar_capacity": 48,
       "launch_per_round": 12,
       "weapons": [
@@ -265,7 +266,7 @@
       "point_cost": 75,
       "hp": 110,
       "hardness": 14,
-      "maneuverability": 0.55,
+      "maneuverability": 0.75,
       "initiative": 9,
       "weapons": [
         {
@@ -324,7 +325,7 @@
           "penetration": 4,
           "accuracy": 0.72,
           "tracking": 0.7,
-          "shots": 4,
+          "shots": 3,
           "ammo": null,
           "valid_targets": "small_craft"
         }
@@ -356,7 +357,7 @@
           "accuracy": 0.6,
           "tracking": 0.3,
           "shots": 2,
-          "ammo": 4,
+          "ammo": 2,
           "valid_targets": "capitals"
         }
       ],

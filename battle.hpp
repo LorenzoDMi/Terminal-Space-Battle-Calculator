@@ -71,3 +71,22 @@ BattleOutcome run_battle(
 );
 
 void print_outcome(BattleOutcome outcome);
+
+// How many rounds a rearm cycle takes once a plane/mecha docks. Single knob.
+constexpr int kRearmDurationRounds = 2;
+
+// Chance a docked plane/mecha goes down with its carrier instead of being
+// safely ejected, when the carrier is destroyed mid-rearm.
+constexpr double kHangarCasualtyChance = 0.4;
+
+// Scans one side's fleet: advances anyone currently docked (redeploying them
+// once their timer hits zero; if their host carrier died first, rolls a
+// hangar-casualty check — kHangarCasualtyChance odds they're destroyed
+// along with it, otherwise they're ejected still out of ammo), then tries
+// to dock any plane/mecha whose antiship weapons have just run dry at a
+// carrier-capable ship on the same side with a free bay. A carrier's usable
+// capacity scales down with its own current HP, and a destroyed carrier
+// offers none. Prints one line per dock/redeploy/eject/casualty event. Call
+// once per side, once per round — after resolve_round, so this round's
+// ammo use and carrier losses are already reflected.
+void process_rearming(std::vector<UnitInstance>& fleet, const char* side_label);

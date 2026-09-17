@@ -56,6 +56,11 @@ struct UnitClassData {
     std::vector<WeaponData> weapons;
     std::unordered_map<UnitType, double> target_priorities; // weights, normalised at runtime
     std::optional<EscortData> escort;
+
+    // 0 = this class cannot service rearming (most ships). >0 = max planes/
+    // mechas it can have docked at once, at full HP. Scales down with damage
+    // at runtime — see process_rearming in battle.cpp.
+    int rearm_capacity = 0;
 };
 
 class UnitDatabase {

@@ -64,6 +64,7 @@ UnitClassData parse_unit_class(const std::string& id, const json& j) {
         u.target_priorities[unit_type_from_string(type_name)] = weight.get<double>();
 
     u.escort = parse_escort(j.at("escort"));
+    u.rearm_capacity = j.value("rearm_capacity", 0);
     return u;
 }
 
