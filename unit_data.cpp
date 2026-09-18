@@ -68,7 +68,7 @@ UnitClassData parse_unit_class(const std::string& id, const json& j) {
     return u;
 }
 
-} // namespace
+} 
 
 void UnitDatabase::load_from_file(const std::string& json_path) {
     std::ifstream f(json_path);

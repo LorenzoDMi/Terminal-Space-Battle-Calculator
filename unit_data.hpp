@@ -5,7 +5,7 @@
 #include <optional>
 #include "types.hpp"
 
-// One weapon mounted on a unit class. Pure data — no combat math lives here.
+// Weapon structure, no combat formula altogether here
 struct WeaponData {
     std::string id;
     std::string name;
@@ -43,7 +43,7 @@ struct EscortData {
 };
 
 // Immutable template loaded once from JSON. Many UnitInstances point at the same
-// UnitClassData — it is never copied per-instance.
+// UnitClassData (never copied per-instance)
 struct UnitClassData {
     std::string class_id;
     std::string name;
@@ -54,12 +54,13 @@ struct UnitClassData {
     double maneuverability = 0.0;
     int initiative = 0;
     std::vector<WeaponData> weapons;
-    std::unordered_map<UnitType, double> target_priorities; // weights, normalised at runtime
+    std::unordered_map<UnitType, double> target_priorities; // weights normalised at runtime
     std::optional<EscortData> escort;
 
-    // 0 = this class cannot service rearming (most ships). >0 = max planes/
-    // mechas it can have docked at once, at full HP. Scales down with damage
-    // at runtime — see process_rearming in battle.cpp.
+    // 0 = this class cannot service rearming. 
+    //>0 = max planes/mechas it can have docked at once, at full HP. 
+    //Scales down with damage at runtime.
+    //process_rearming in battle.cpp.
     int rearm_capacity = 0;
 };
 

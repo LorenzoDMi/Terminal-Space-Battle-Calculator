@@ -108,7 +108,7 @@ double compute_hit_chance(const WeaponData& weapon, const UnitInstance& attacker
     return std::clamp(chance, 0.02, 0.95);
 }
 
-// Banded penetration check bundled with a human-readable label, since both
+// Banded penetration check bundled with a human readable label, since both
 // the combat math and the salvo log need the same classification.
 struct PenetrationResult {
     double multiplier;

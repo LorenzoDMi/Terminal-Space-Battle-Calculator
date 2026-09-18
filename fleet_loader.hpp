@@ -14,10 +14,14 @@ private:
 
 // Reads a plain-text fleet roster and instantiates UnitInstances against a UnitDatabase.
 // File format, one entry per line:
-//   class_id [xN] [ace=ace_id]
+//   class_id [xN]
+//if one entry is single, do not insert [xN]
+//if one entry had an ace, insert it as a single, likewise
+//   class_id_mch_A [ace=ace_id]
+//   class_id_mch_A [xN]
 // Lines starting with '#' and blank lines are ignored. xN repeats the line N times;
 // ace=id may only be combined with a bare (count-1) line. The same ace_id cannot
-// appear twice in one fleet file (throws — catches copy-paste typos).
+// appear twice in one fleet file (throws catches copy-paste typos).
 //
 // next_instance_id is a shared counter: pass the same int& for both fleets so
 // aggressor and defender instance IDs never collide.

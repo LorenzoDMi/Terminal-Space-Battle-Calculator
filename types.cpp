@@ -26,7 +26,7 @@ const std::unordered_map<std::string, std::vector<UnitType>>& groups() {
     return g;
 }
 
-} // namespace
+} 
 
 UnitType unit_type_from_string(const std::string& s) {
     auto& m = name_to_type();

@@ -6,8 +6,7 @@
 
 enum class Side { Aggressor, Defender };
 
-// Aces don't exist as game content yet — this is deliberately the smallest
-// possible struct so it's cheap to extend once the design is settled.
+// Aces struct, as read from the relative JSON.
 struct AceData {
     std::string ace_id;
     std::string name;
@@ -18,8 +17,8 @@ struct AceData {
 
 enum class RearmStatus { Available, Rearming };
 
-// One deployed unit in a specific battle. Points at its immutable class
-// template rather than copying weapons/priorities per instance.
+// One deployed unit in a specific battle. 
+//Points at its immutable class template rather than copying weapons/priorities per instance.
 struct UnitInstance {
     int instance_id = -1;
     const UnitClassData* unit_class = nullptr; // never owns; UnitDatabase must outlive the battle
