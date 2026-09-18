@@ -9,6 +9,21 @@
 
 namespace {
 
+// ANSI colors for the round-by-round salvo log only. Never used in
+// print_outcome/print_survivors (the final battle result).
+constexpr const char* kColorReset  = "\033[0m";
+constexpr const char* kColorYellow = "\033[33m"; // an ace is attacking or defending
+constexpr const char* kColorRed    = "\033[31m"; // a unit was destroyed this line
+
+// Prints one turn-log line, colored red if it records a destruction, else
+// yellow if an ace was involved (attacking or defending), else plain.
+// Red takes priority over yellow when both apply.
+void print_log_line(const std::string& text, bool ace_involved, bool destroyed) {
+    if (destroyed)      std::cout << kColorRed    << text << kColorReset << "\n";
+    else if (ace_involved) std::cout << kColorYellow << text << kColorReset << "\n";
+    else                 std::cout << text << "\n";
+}
+
 std::mt19937& rng() {
     static std::mt19937 engine(std::random_device{}());
     return engine;
@@ -251,6 +266,12 @@ void resolve_round(std::vector<UnitInstance>& aggressor, std::vector<UnitInstanc
     std::vector<UnitInstance*> defender_shooters;
     for (auto& u : defender) if (u.alive && u.rearm_status == RearmStatus::Available) defender_shooters.push_back(&u);
 
+    // Firing order within a side is randomised each round (a unit's own shots
+    // still all fire together) so it isn't always instance #0, #1, #2... —
+    // the aggressor-then-defender side ordering itself is untouched.
+    std::shuffle(aggressor_shooters.begin(), aggressor_shooters.end(), rng());
+    std::shuffle(defender_shooters.begin(), defender_shooters.end(), rng());
+
     std::unordered_map<UnitInstance*, int> pending_damage;
     std::unordered_set<UnitInstance*> destroyed_flagged;
 
@@ -276,7 +297,8 @@ void resolve_round(std::vector<UnitInstance>& aggressor, std::vector<UnitInstanc
 
                     double hit_chance = compute_hit_chance(weapon, *attacker, *primary_target);
                     if (roll01() >= hit_chance) {
-                        std::cout << line << ": MISS\n";
+                        bool ace_involved = attacker->ace.has_value() || primary_target->ace.has_value();
+                        print_log_line(line + ": MISS", ace_involved, false);
                         continue;
                     }
 
@@ -304,8 +326,11 @@ void resolve_round(std::vector<UnitInstance>& aggressor, std::vector<UnitInstanc
                     if (estimated_remaining <= 0 && destroyed_flagged.insert(actual_target).second)
                         destroyed_now = true;
 
-                    std::cout << line << ": HIT " << final_damage << " dmg (" << band_label << ")"
-                              << (destroyed_now ? " [DESTROYED]" : "") << "\n";
+                    bool ace_involved = attacker->ace.has_value() || primary_target->ace.has_value()
+                                      || actual_target->ace.has_value();
+                    line += ": HIT " + std::to_string(final_damage) + " dmg (" + band_label + ")"
+                          + (destroyed_now ? " [DESTROYED]" : "");
+                    print_log_line(line, ace_involved, destroyed_now);
                 }
             }
         }
@@ -397,15 +422,18 @@ void process_rearming(std::vector<UnitInstance>& fleet, const char* side_label) 
 
         if (!u.docked_carrier->alive) {
             bool killed = roll01() < kHangarCasualtyChance;
+            bool ace_involved = u.ace.has_value() || u.docked_carrier->ace.has_value();
             if (killed) {
-                std::cout << "  [" << side_label << "][REARM] " << format_unit_label(u)
-                          << " destroyed in the hangar - host carrier "
-                          << format_unit_label(*u.docked_carrier) << " was lost\n";
+                std::string msg = "  [" + std::string(side_label) + "][REARM] " + format_unit_label(u)
+                                 + " destroyed in the hangar - host carrier "
+                                 + format_unit_label(*u.docked_carrier) + " was lost";
+                print_log_line(msg, ace_involved, true);
                 u.alive = false;
                 u.current_hp = 0;
             } else {
-                std::cout << "  [" << side_label << "][REARM] " << format_unit_label(u)
-                          << " - host carrier destroyed, ejected mid-rearm (still out of antiship ammo)\n";
+                std::string msg = "  [" + std::string(side_label) + "][REARM] " + format_unit_label(u)
+                                 + " - host carrier destroyed, ejected mid-rearm (still out of antiship ammo)";
+                print_log_line(msg, ace_involved, false);
             }
             u.rearm_status = RearmStatus::Available;
             u.docked_carrier = nullptr;
