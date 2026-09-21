@@ -1,5 +1,5 @@
 #include "fleet_loader.hpp"
-#include <nlohmann/json.hpp>
+#include <json.hpp>
 #include <fstream>
 #include <sstream>
 #include <stdexcept>
