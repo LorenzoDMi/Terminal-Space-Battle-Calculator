@@ -1,0 +1,2792 @@
+{
+  "schema_version": "0.2",
+  "unit_classes": {
+    "mch_zaku_ii": {
+      "name": "MS-06F Zaku II",
+      "type": "mecha",
+      "point_cost": 70,
+      "hp": 100,
+      "hardness": 12,
+      "maneuverability": 0.7,
+      "initiative": 8,
+      "weapons": [
+        {
+          "id": "machine_gun",
+          "name": "Zaku Machine Gun",
+          "category": "anti_mecha",
+          "damage_min": 40,
+          "damage_max": 60,
+          "penetration": 22,
+          "accuracy": 0.68,
+          "tracking": 0.7,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "heat_hawk",
+          "name": "Heat Hawk",
+          "category": "anti_mecha",
+          "damage_min": 60,
+          "damage_max": 90,
+          "penetration": 30,
+          "accuracy": 0.62,
+          "tracking": 0.65,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "bazooka",
+          "name": "Zaku Bazooka",
+          "category": "antiship",
+          "damage_min": 85,
+          "damage_max": 125,
+          "penetration": 52,
+          "accuracy": 0.48,
+          "tracking": 0.35,
+          "shots": 1,
+          "ammo": 5,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "mecha": 4,
+        "fighter": 3,
+        "striker": 3,
+        "carrier": 3,
+        "cruiser": 2,
+        "battleship": 2
+      },
+      "escort": null
+    },
+    "mch_gelgoog": {
+      "name": "MS-14A Gelgoog",
+      "type": "mecha",
+      "point_cost": 115,
+      "hp": 160,
+      "hardness": 18,
+      "maneuverability": 0.8,
+      "initiative": 9,
+      "weapons": [
+        {
+          "id": "beam_rifle",
+          "name": "Beam Rifle",
+          "category": "anti_mecha",
+          "damage_min": 65,
+          "damage_max": 95,
+          "penetration": 34,
+          "accuracy": 0.74,
+          "tracking": 0.78,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_naginata",
+          "name": "Beam Naginata",
+          "category": "anti_mecha",
+          "damage_min": 90,
+          "damage_max": 130,
+          "penetration": 42,
+          "accuracy": 0.7,
+          "tracking": 0.75,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_rifle_overcharge",
+          "name": "Overcharged Beam Rifle",
+          "category": "antiship",
+          "damage_min": 105,
+          "damage_max": 155,
+          "penetration": 64,
+          "accuracy": 0.55,
+          "tracking": 0.4,
+          "shots": 1,
+          "ammo": 6,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "mecha": 4,
+        "fighter": 3,
+        "striker": 3,
+        "carrier": 3,
+        "cruiser": 2,
+        "battleship": 2
+      },
+      "escort": null
+    },
+    "mch_gm": {
+      "name": "RGM-79GM",
+      "type": "mecha",
+      "point_cost": 80,
+      "hp": 110,
+      "hardness": 14,
+      "maneuverability": 0.72,
+      "initiative": 8,
+      "weapons": [
+        {
+          "id": "beam_spray_gun",
+          "name": "Beam Spray Gun",
+          "category": "anti_mecha",
+          "damage_min": 50,
+          "damage_max": 75,
+          "penetration": 28,
+          "accuracy": 0.7,
+          "tracking": 0.72,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_saber",
+          "name": "Beam Saber",
+          "category": "anti_mecha",
+          "damage_min": 65,
+          "damage_max": 95,
+          "penetration": 34,
+          "accuracy": 0.65,
+          "tracking": 0.68,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "bazooka",
+          "name": "Bazooka",
+          "category": "antiship",
+          "damage_min": 90,
+          "damage_max": 130,
+          "penetration": 54,
+          "accuracy": 0.5,
+          "tracking": 0.35,
+          "shots": 1,
+          "ammo": 4,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "mecha": 4,
+        "fighter": 3,
+        "striker": 3,
+        "carrier": 2,
+        "cruiser": 2,
+        "battleship": 1
+      },
+      "escort": null
+    },
+    "mch_guncannon": {
+      "name": "RX-77-2 Guncannon",
+      "type": "mecha",
+      "point_cost": 100,
+      "hp": 150,
+      "hardness": 20,
+      "maneuverability": 0.45,
+      "initiative": 6,
+      "weapons": [
+        {
+          "id": "cannons",
+          "name": "240mm Cannons",
+          "category": "antiship",
+          "damage_min": 120,
+          "damage_max": 175,
+          "penetration": 66,
+          "accuracy": 0.56,
+          "tracking": 0.28,
+          "shots": 2,
+          "ammo": 8,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "head_vulcan",
+          "name": "Head Vulcan",
+          "category": "anti_mecha",
+          "damage_min": 25,
+          "damage_max": 40,
+          "penetration": 14,
+          "accuracy": 0.65,
+          "tracking": 0.72,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_saber",
+          "name": "Beam Saber",
+          "category": "anti_mecha",
+          "damage_min": 60,
+          "damage_max": 85,
+          "penetration": 30,
+          "accuracy": 0.6,
+          "tracking": 0.65,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "carrier": 4,
+        "battleship": 3,
+        "cruiser": 3,
+        "destroyer": 2,
+        "transport": 1,
+        "mecha": 2,
+        "fighter": 1,
+        "striker": 1
+      },
+      "escort": null
+    },
+    "crs_salamis": {
+      "name": "Salamis-class Cruiser",
+      "type": "cruiser",
+      "point_cost": 400,
+      "hp": 950,
+      "hardness": 36,
+      "maneuverability": 0.1,
+      "initiative": 5,
+      "rearm_capacity": 0,
+      "hangar_capacity": 4,
+      "launch_per_round": 2,
+      "weapons": [
+        {
+          "id": "main_battery",
+          "name": "Twin Mega Particle Cannons",
+          "category": "antiship",
+          "damage_min": 100,
+          "damage_max": 150,
+          "penetration": 58,
+          "accuracy": 0.66,
+          "tracking": 0.15,
+          "shots": 3,
+          "ammo": null,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "flak",
+          "name": "Anti-Aircraft Guns",
+          "category": "aa",
+          "damage_min": 18,
+          "damage_max": 30,
+          "penetration": 13,
+          "accuracy": 0.76,
+          "tracking": 0.85,
+          "shots": 5,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "cruiser": 4,
+        "battleship": 3,
+        "carrier": 4,
+        "destroyer": 3,
+        "transport": 1,
+        "fighter": 2,
+        "striker": 2,
+        "mecha": 2
+      },
+      "escort": {
+        "chance": 0.4,
+        "max_intercepts_per_round": 2,
+        "protects": [
+          "battleship",
+          "carrier",
+          "transport"
+        ]
+      }
+    },
+    "bsh_magellan": {
+      "name": "Magellan-class Battleship",
+      "type": "battleship",
+      "point_cost": 820,
+      "hp": 2200,
+      "hardness": 52,
+      "maneuverability": 0,
+      "initiative": 2,
+      "rearm_capacity": 0,
+      "hangar_capacity": 6,
+      "launch_per_round": 2,
+      "weapons": [
+        {
+          "id": "main_battery",
+          "name": "Main Mega Particle Cannons",
+          "category": "antiship",
+          "damage_min": 200,
+          "damage_max": 320,
+          "penetration": 82,
+          "accuracy": 0.63,
+          "tracking": 0.05,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "secondary_battery",
+          "name": "Secondary Mega Particle Cannons",
+          "category": "antiship",
+          "damage_min": 65,
+          "damage_max": 100,
+          "penetration": 50,
+          "accuracy": 0.7,
+          "tracking": 0.2,
+          "shots": 5,
+          "ammo": null,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "pd_net",
+          "name": "Anti-Aircraft Guns",
+          "category": "aa",
+          "damage_min": 18,
+          "damage_max": 28,
+          "penetration": 12,
+          "accuracy": 0.78,
+          "tracking": 0.9,
+          "shots": 8,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "battleship": 3,
+        "cruiser": 4,
+        "carrier": 5,
+        "destroyer": 2,
+        "transport": 1
+      },
+      "escort": null
+    },
+    "trn_columbus": {
+      "name": "Columbus-class Transport",
+      "type": "transport",
+      "point_cost": 90,
+      "hp": 700,
+      "hardness": 12,
+      "maneuverability": 0.05,
+      "initiative": 1,
+      "weapons": [],
+      "target_priorities": {},
+      "escort": null
+    },
+    "car_atanus": {
+      "name": "Atanus-class Carrier",
+      "type": "carrier",
+      "point_cost": 360,
+      "hp": 950,
+      "hardness": 20,
+      "maneuverability": 0.04,
+      "initiative": 2,
+      "rearm_capacity": 12,
+      "hangar_capacity": 12,
+      "launch_per_round": 4,
+      "weapons": [
+        {
+          "id": "flak",
+          "name": "Anti-Aircraft Guns",
+          "category": "aa",
+          "damage_min": 16,
+          "damage_max": 26,
+          "penetration": 11,
+          "accuracy": 0.74,
+          "tracking": 0.85,
+          "shots": 6,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "fighter": 4,
+        "striker": 4,
+        "mecha": 4
+      },
+      "escort": null
+    },
+    "car_pegasus": {
+      "name": "Pegasus-class Assault Carrier",
+      "type": "carrier",
+      "point_cost": 640,
+      "hp": 1450,
+      "hardness": 34,
+      "maneuverability": 0.08,
+      "initiative": 3,
+      "rearm_capacity": 14,
+      "hangar_capacity": 14,
+      "launch_per_round": 4,
+      "weapons": [
+        {
+          "id": "main_battery",
+          "name": "Twin Mega Particle Cannons",
+          "category": "antiship",
+          "damage_min": 95,
+          "damage_max": 145,
+          "penetration": 58,
+          "accuracy": 0.66,
+          "tracking": 0.15,
+          "shots": 4,
+          "ammo": null,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "missile_launchers",
+          "name": "Missile Launchers",
+          "category": "antiship",
+          "damage_min": 55,
+          "damage_max": 85,
+          "penetration": 44,
+          "accuracy": 0.62,
+          "tracking": 0.25,
+          "shots": 6,
+          "ammo": 18,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "pd_net",
+          "name": "Point Defence Net",
+          "category": "aa",
+          "damage_min": 18,
+          "damage_max": 28,
+          "penetration": 12,
+          "accuracy": 0.78,
+          "tracking": 0.9,
+          "shots": 8,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "fighter": 4,
+        "striker": 4,
+        "mecha": 4,
+        "carrier": 3,
+        "cruiser": 3,
+        "battleship": 2,
+        "destroyer": 2,
+        "transport": 1
+      },
+      "escort": null
+    },
+    "str_public": {
+      "name": "Public-class Striker",
+      "type": "striker",
+      "point_cost": 40,
+      "hp": 55,
+      "hardness": 0,
+      "maneuverability": 0.4,
+      "initiative": 8,
+      "weapons": [
+        {
+          "id": "ship_killer",
+          "name": "Anti-Ship Missiles",
+          "category": "antiship",
+          "damage_min": 100,
+          "damage_max": 150,
+          "penetration": 62,
+          "accuracy": 0.58,
+          "tracking": 0.28,
+          "shots": 2,
+          "ammo": 2,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "battleship": 4,
+        "carrier": 5,
+        "cruiser": 3,
+        "destroyer": 1,
+        "transport": 2
+      },
+      "escort": null
+    },
+    "ftr_saberfish": {
+      "name": "FF-S3 Saberfish",
+      "type": "fighter",
+      "point_cost": 42,
+      "hp": 50,
+      "hardness": 0,
+      "maneuverability": 0.5,
+      "initiative": 10,
+      "weapons": [
+        {
+          "id": "vulcan",
+          "name": "Vulcan Cannon",
+          "category": "aa",
+          "damage_min": 16,
+          "damage_max": 24,
+          "penetration": 4,
+          "accuracy": 0.72,
+          "tracking": 0.7,
+          "shots": 3,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "antiship_missile",
+          "name": "Anti-Ship Missile",
+          "category": "antiship",
+          "damage_min": 85,
+          "damage_max": 125,
+          "penetration": 56,
+          "accuracy": 0.55,
+          "tracking": 0.3,
+          "shots": 1,
+          "ammo": 6,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "antimecha_missile",
+          "name": "Anti-Mecha Missile",
+          "category": "anti_mecha",
+          "damage_min": 60,
+          "damage_max": 90,
+          "penetration": 28,
+          "accuracy": 0.6,
+          "tracking": 0.65,
+          "shots": 1,
+          "ammo": 6,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "fighter": 4,
+        "striker": 4,
+        "mecha": 3,
+        "carrier": 4,
+        "cruiser": 3,
+        "battleship": 2,
+        "destroyer": 2,
+        "transport": 1
+      },
+      "escort": null
+    },
+    "dst_musai": {
+      "name": "Musai-class Destroyer",
+      "type": "destroyer",
+      "point_cost": 300,
+      "hp": 650,
+      "hardness": 30,
+      "maneuverability": 0.14,
+      "initiative": 5,
+      "rearm_capacity": 4,
+      "hangar_capacity": 6,
+      "launch_per_round": 3,
+      "weapons": [
+        {
+          "id": "main_battery",
+          "name": "Mega Particle Cannons",
+          "category": "antiship",
+          "damage_min": 90,
+          "damage_max": 140,
+          "penetration": 56,
+          "accuracy": 0.62,
+          "tracking": 0.15,
+          "shots": 3,
+          "ammo": null,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "missile_launchers",
+          "name": "Missile Launchers",
+          "category": "antiship",
+          "damage_min": 55,
+          "damage_max": 85,
+          "penetration": 44,
+          "accuracy": 0.6,
+          "tracking": 0.25,
+          "shots": 4,
+          "ammo": 12,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "flak",
+          "name": "Anti-Aircraft Guns",
+          "category": "aa",
+          "damage_min": 20,
+          "damage_max": 32,
+          "penetration": 14,
+          "accuracy": 0.76,
+          "tracking": 0.85,
+          "shots": 5,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "cruiser": 3,
+        "battleship": 2,
+        "carrier": 4,
+        "destroyer": 3,
+        "transport": 2,
+        "fighter": 1,
+        "striker": 1,
+        "mecha": 1
+      },
+      "escort": {
+        "chance": 0.45,
+        "max_intercepts_per_round": 2,
+        "protects": [
+          "battleship",
+          "carrier",
+          "cruiser",
+          "transport"
+        ]
+      }
+    },
+    "crs_chivvay": {
+      "name": "Chivvay-class Cruiser",
+      "type": "cruiser",
+      "point_cost": 470,
+      "hp": 1100,
+      "hardness": 40,
+      "maneuverability": 0.08,
+      "initiative": 4,
+      "rearm_capacity": 0,
+      "hangar_capacity": 8,
+      "launch_per_round": 3,
+      "weapons": [
+        {
+          "id": "main_battery",
+          "name": "Mega Particle Cannons",
+          "category": "antiship",
+          "damage_min": 105,
+          "damage_max": 160,
+          "penetration": 60,
+          "accuracy": 0.66,
+          "tracking": 0.15,
+          "shots": 4,
+          "ammo": null,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "flak",
+          "name": "Anti-Aircraft Guns",
+          "category": "aa",
+          "damage_min": 20,
+          "damage_max": 32,
+          "penetration": 14,
+          "accuracy": 0.76,
+          "tracking": 0.85,
+          "shots": 6,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "cruiser": 4,
+        "battleship": 3,
+        "carrier": 4,
+        "destroyer": 3,
+        "transport": 1
+      },
+      "escort": null
+    },
+    "bsh_gwazine": {
+      "name": "Gwazine-class Battleship",
+      "type": "battleship",
+      "point_cost": 980,
+      "hp": 2600,
+      "hardness": 55,
+      "maneuverability": 0,
+      "initiative": 2,
+      "rearm_capacity": 10,
+      "hangar_capacity": 20,
+      "launch_per_round": 6,
+      "weapons": [
+        {
+          "id": "main_battery",
+          "name": "Main Mega Particle Cannons",
+          "category": "antiship",
+          "damage_min": 220,
+          "damage_max": 360,
+          "penetration": 86,
+          "accuracy": 0.64,
+          "tracking": 0.05,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "secondary_battery",
+          "name": "Secondary Mega Particle Cannons",
+          "category": "antiship",
+          "damage_min": 60,
+          "damage_max": 95,
+          "penetration": 48,
+          "accuracy": 0.7,
+          "tracking": 0.2,
+          "shots": 6,
+          "ammo": null,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "pd_net",
+          "name": "Point Defence Net",
+          "category": "aa",
+          "damage_min": 18,
+          "damage_max": 30,
+          "penetration": 12,
+          "accuracy": 0.8,
+          "tracking": 0.9,
+          "shots": 8,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "battleship": 3,
+        "cruiser": 4,
+        "carrier": 5,
+        "destroyer": 2,
+        "transport": 1
+      },
+      "escort": null
+    },
+    "car_zanzibar": {
+      "name": "Zanzibar-class Light Carrier",
+      "type": "carrier",
+      "point_cost": 320,
+      "hp": 900,
+      "hardness": 38,
+      "maneuverability": 0.3,
+      "initiative": 6,
+      "rearm_capacity": 6,
+      "hangar_capacity": 6,
+      "launch_per_round": 3,
+      "weapons": [
+        {
+          "id": "main_battery",
+          "name": "Mega Particle Cannons",
+          "category": "antiship",
+          "damage_min": 60,
+          "damage_max": 95,
+          "penetration": 46,
+          "accuracy": 0.66,
+          "tracking": 0.3,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "pd_net",
+          "name": "Point Defence Net",
+          "category": "aa",
+          "damage_min": 18,
+          "damage_max": 28,
+          "penetration": 12,
+          "accuracy": 0.8,
+          "tracking": 0.9,
+          "shots": 6,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "fighter": 4,
+        "striker": 4,
+        "mecha": 4,
+        "carrier": 3,
+        "cruiser": 2,
+        "destroyer": 2,
+        "battleship": 1,
+        "transport": 1
+      },
+      "escort": null
+    },
+    "trn_papua": {
+      "name": "Papua-class Transport",
+      "type": "transport",
+      "point_cost": 110,
+      "hp": 800,
+      "hardness": 12,
+      "maneuverability": 0.05,
+      "initiative": 1,
+      "rearm_capacity": 0,
+      "hangar_capacity": 2,
+      "launch_per_round": 1,
+      "weapons": [],
+      "target_priorities": {},
+      "escort": null
+    },
+    "car_dolos": {
+      "name": "Dolos-class Mobile Carrier",
+      "type": "carrier",
+      "point_cost": 2000,
+      "hp": 3400,
+      "hardness": 45,
+      "maneuverability": 0,
+      "initiative": 1,
+      "rearm_capacity": 40,
+      "hangar_capacity": 180,
+      "launch_per_round": 45,
+      "weapons": [
+        {
+          "id": "main_battery",
+          "name": "Mega Particle Cannons",
+          "category": "antiship",
+          "damage_min": 100,
+          "damage_max": 150,
+          "penetration": 60,
+          "accuracy": 0.66,
+          "tracking": 0.1,
+          "shots": 4,
+          "ammo": null,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "pd_net",
+          "name": "Point Defence Net",
+          "category": "aa",
+          "damage_min": 18,
+          "damage_max": 28,
+          "penetration": 12,
+          "accuracy": 0.78,
+          "tracking": 0.9,
+          "shots": 16,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "fighter": 4,
+        "striker": 4,
+        "mecha": 4,
+        "carrier": 3,
+        "cruiser": 3,
+        "battleship": 3,
+        "destroyer": 2,
+        "transport": 1
+      },
+      "escort": null
+    },
+    "str_gattle": {
+      "name": "Gattle-class Striker",
+      "type": "striker",
+      "point_cost": 32,
+      "hp": 40,
+      "hardness": 0,
+      "maneuverability": 0.35,
+      "initiative": 7,
+      "weapons": [
+        {
+          "id": "machine_cannon",
+          "name": "Machine Cannon",
+          "category": "aa",
+          "damage_min": 10,
+          "damage_max": 16,
+          "penetration": 3,
+          "accuracy": 0.5,
+          "tracking": 0.45,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "ship_killer",
+          "name": "Anti-Ship Missile",
+          "category": "antiship",
+          "damage_min": 100,
+          "damage_max": 145,
+          "penetration": 60,
+          "accuracy": 0.55,
+          "tracking": 0.28,
+          "shots": 1,
+          "ammo": 1,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "carrier": 5,
+        "battleship": 4,
+        "cruiser": 3,
+        "destroyer": 2,
+        "transport": 2,
+        "fighter": 1,
+        "striker": 1,
+        "mecha": 1
+      },
+      "escort": null
+    },
+    "mch_zaku_i": {
+      "name": "MS-05B Zaku I",
+      "type": "mecha",
+      "point_cost": 55,
+      "hp": 85,
+      "hardness": 8,
+      "maneuverability": 0.6,
+      "initiative": 7,
+      "weapons": [
+        {
+          "id": "machine_gun",
+          "name": "Zaku I Machine Gun",
+          "category": "anti_mecha",
+          "damage_min": 30,
+          "damage_max": 48,
+          "penetration": 18,
+          "accuracy": 0.64,
+          "tracking": 0.66,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "bazooka",
+          "name": "Zaku I Bazooka",
+          "category": "antiship",
+          "damage_min": 75,
+          "damage_max": 110,
+          "penetration": 46,
+          "accuracy": 0.45,
+          "tracking": 0.3,
+          "shots": 1,
+          "ammo": 4,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "mecha": 4,
+        "fighter": 3,
+        "striker": 3,
+        "carrier": 3,
+        "cruiser": 2,
+        "battleship": 2
+      },
+      "escort": null
+    },
+    "mch_rick_dom": {
+      "name": "MS-09R Rick Dom",
+      "type": "mecha",
+      "point_cost": 120,
+      "hp": 165,
+      "hardness": 22,
+      "maneuverability": 0.55,
+      "initiative": 7,
+      "weapons": [
+        {
+          "id": "giant_bazooka",
+          "name": "Giant Bazooka",
+          "category": "antiship",
+          "damage_min": 140,
+          "damage_max": 200,
+          "penetration": 74,
+          "accuracy": 0.57,
+          "tracking": 0.3,
+          "shots": 1,
+          "ammo": 8,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "heat_saber",
+          "name": "Heat Saber",
+          "category": "anti_mecha",
+          "damage_min": 60,
+          "damage_max": 90,
+          "penetration": 32,
+          "accuracy": 0.62,
+          "tracking": 0.62,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "machine_gun",
+          "name": "Rick Dom Machine Gun",
+          "category": "anti_mecha",
+          "damage_min": 35,
+          "damage_max": 55,
+          "penetration": 22,
+          "accuracy": 0.66,
+          "tracking": 0.7,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "carrier": 4,
+        "battleship": 4,
+        "cruiser": 3,
+        "destroyer": 2,
+        "mecha": 3,
+        "fighter": 2,
+        "striker": 2
+      },
+      "escort": null
+    },
+    "mch_guntank": {
+      "name": "RX-75 Guntank",
+      "type": "mecha",
+      "point_cost": 92,
+      "hp": 145,
+      "hardness": 22,
+      "maneuverability": 0.3,
+      "initiative": 5,
+      "weapons": [
+        {
+          "id": "twin_cannons",
+          "name": "240mm Twin Cannons",
+          "category": "antiship",
+          "damage_min": 130,
+          "damage_max": 190,
+          "penetration": 68,
+          "accuracy": 0.56,
+          "tracking": 0.2,
+          "shots": 2,
+          "ammo": 10,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "machine_gun",
+          "name": "Guntank Machine Gun",
+          "category": "anti_mecha",
+          "damage_min": 25,
+          "damage_max": 40,
+          "penetration": 14,
+          "accuracy": 0.62,
+          "tracking": 0.68,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "carrier": 4,
+        "battleship": 3,
+        "cruiser": 3,
+        "destroyer": 2,
+        "transport": 1,
+        "mecha": 2,
+        "fighter": 1,
+        "striker": 1
+      },
+      "escort": null
+    },
+    "mch_rx78_2": {
+      "name": "RX-78-2 Gundam",
+      "type": "mecha",
+      "point_cost": 220,
+      "hp": 240,
+      "hardness": 28,
+      "maneuverability": 0.8,
+      "initiative": 9,
+      "weapons": [
+        {
+          "id": "beam_rifle",
+          "name": "Beam Rifle",
+          "category": "anti_mecha",
+          "damage_min": 80,
+          "damage_max": 120,
+          "penetration": 42,
+          "accuracy": 0.74,
+          "tracking": 0.76,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_saber",
+          "name": "Beam Saber",
+          "category": "anti_mecha",
+          "damage_min": 100,
+          "damage_max": 140,
+          "penetration": 48,
+          "accuracy": 0.7,
+          "tracking": 0.72,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "hyper_bazooka",
+          "name": "Hyper Bazooka",
+          "category": "antiship",
+          "damage_min": 140,
+          "damage_max": 200,
+          "penetration": 72,
+          "accuracy": 0.56,
+          "tracking": 0.32,
+          "shots": 1,
+          "ammo": 5,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "head_vulcan",
+          "name": "Head Vulcan",
+          "category": "anti_mecha",
+          "damage_min": 25,
+          "damage_max": 40,
+          "penetration": 14,
+          "accuracy": 0.65,
+          "tracking": 0.72,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "mecha": 4,
+        "fighter": 3,
+        "striker": 3,
+        "carrier": 4,
+        "cruiser": 3,
+        "battleship": 3,
+        "destroyer": 2
+      },
+      "escort": null
+    },
+    "mch_gm_sniper_ii": {
+      "name": "RGM-79SP GM Sniper II",
+      "type": "mecha",
+      "point_cost": 115,
+      "hp": 125,
+      "hardness": 15,
+      "maneuverability": 0.6,
+      "initiative": 7,
+      "weapons": [
+        {
+          "id": "sniper_rifle",
+          "name": "Long Beam Rifle",
+          "category": "anti_mecha",
+          "damage_min": 85,
+          "damage_max": 125,
+          "penetration": 44,
+          "accuracy": 0.82,
+          "tracking": 0.55,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_saber",
+          "name": "Beam Saber",
+          "category": "anti_mecha",
+          "damage_min": 60,
+          "damage_max": 90,
+          "penetration": 32,
+          "accuracy": 0.62,
+          "tracking": 0.66,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "bazooka",
+          "name": "Bazooka",
+          "category": "antiship",
+          "damage_min": 90,
+          "damage_max": 130,
+          "penetration": 54,
+          "accuracy": 0.5,
+          "tracking": 0.35,
+          "shots": 1,
+          "ammo": 4,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "mecha": 4,
+        "fighter": 3,
+        "striker": 3,
+        "carrier": 3,
+        "cruiser": 2,
+        "battleship": 2
+      },
+      "escort": null
+    },
+    "mch_hizack": {
+      "name": "RMS-106 Hizack",
+      "type": "mecha",
+      "point_cost": 95,
+      "hp": 135,
+      "hardness": 17,
+      "maneuverability": 0.68,
+      "initiative": 8,
+      "weapons": [
+        {
+          "id": "beam_gun",
+          "name": "Beam Gun",
+          "category": "anti_mecha",
+          "damage_min": 50,
+          "damage_max": 75,
+          "penetration": 30,
+          "accuracy": 0.7,
+          "tracking": 0.72,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_saber",
+          "name": "Beam Saber",
+          "category": "anti_mecha",
+          "damage_min": 65,
+          "damage_max": 95,
+          "penetration": 34,
+          "accuracy": 0.64,
+          "tracking": 0.66,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "bazooka",
+          "name": "Hizack Bazooka",
+          "category": "antiship",
+          "damage_min": 95,
+          "damage_max": 140,
+          "penetration": 58,
+          "accuracy": 0.5,
+          "tracking": 0.35,
+          "shots": 1,
+          "ammo": 5,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "mecha": 4,
+        "fighter": 3,
+        "striker": 3,
+        "carrier": 3,
+        "cruiser": 2,
+        "battleship": 2
+      },
+      "escort": null
+    },
+    "mch_marasai": {
+      "name": "RMS-108 Marasai",
+      "type": "mecha",
+      "point_cost": 130,
+      "hp": 175,
+      "hardness": 21,
+      "maneuverability": 0.68,
+      "initiative": 8,
+      "weapons": [
+        {
+          "id": "beam_gun",
+          "name": "Beam Gun",
+          "category": "anti_mecha",
+          "damage_min": 60,
+          "damage_max": 90,
+          "penetration": 34,
+          "accuracy": 0.72,
+          "tracking": 0.74,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_saber",
+          "name": "Beam Saber",
+          "category": "anti_mecha",
+          "damage_min": 70,
+          "damage_max": 105,
+          "penetration": 38,
+          "accuracy": 0.66,
+          "tracking": 0.68,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "bazooka",
+          "name": "Bazooka",
+          "category": "antiship",
+          "damage_min": 110,
+          "damage_max": 160,
+          "penetration": 62,
+          "accuracy": 0.52,
+          "tracking": 0.34,
+          "shots": 1,
+          "ammo": 5,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "mecha": 4,
+        "fighter": 3,
+        "striker": 3,
+        "carrier": 3,
+        "cruiser": 2,
+        "battleship": 2
+      },
+      "escort": null
+    },
+    "mch_rick_dias": {
+      "name": "RMS-099 Rick Dias",
+      "type": "mecha",
+      "point_cost": 145,
+      "hp": 190,
+      "hardness": 24,
+      "maneuverability": 0.7,
+      "initiative": 8,
+      "weapons": [
+        {
+          "id": "beam_gun",
+          "name": "Beam Gun",
+          "category": "anti_mecha",
+          "damage_min": 65,
+          "damage_max": 100,
+          "penetration": 38,
+          "accuracy": 0.72,
+          "tracking": 0.74,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_saber",
+          "name": "Beam Saber",
+          "category": "anti_mecha",
+          "damage_min": 80,
+          "damage_max": 115,
+          "penetration": 42,
+          "accuracy": 0.67,
+          "tracking": 0.7,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "bazooka",
+          "name": "Bazooka",
+          "category": "antiship",
+          "damage_min": 120,
+          "damage_max": 175,
+          "penetration": 66,
+          "accuracy": 0.54,
+          "tracking": 0.34,
+          "shots": 1,
+          "ammo": 5,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "mecha": 4,
+        "fighter": 3,
+        "striker": 3,
+        "carrier": 3,
+        "cruiser": 2,
+        "battleship": 2
+      },
+      "escort": null
+    },
+    "mch_gundam_mk2": {
+      "name": "RX-178 Gundam Mk-II",
+      "type": "mecha",
+      "point_cost": 190,
+      "hp": 230,
+      "hardness": 26,
+      "maneuverability": 0.75,
+      "initiative": 9,
+      "weapons": [
+        {
+          "id": "beam_rifle",
+          "name": "Beam Rifle",
+          "category": "anti_mecha",
+          "damage_min": 75,
+          "damage_max": 115,
+          "penetration": 42,
+          "accuracy": 0.74,
+          "tracking": 0.76,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_saber",
+          "name": "Beam Saber",
+          "category": "anti_mecha",
+          "damage_min": 95,
+          "damage_max": 135,
+          "penetration": 46,
+          "accuracy": 0.7,
+          "tracking": 0.72,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "hyper_bazooka",
+          "name": "Hyper Bazooka",
+          "category": "antiship",
+          "damage_min": 135,
+          "damage_max": 195,
+          "penetration": 72,
+          "accuracy": 0.55,
+          "tracking": 0.32,
+          "shots": 1,
+          "ammo": 5,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "head_vulcan",
+          "name": "Head Vulcan",
+          "category": "anti_mecha",
+          "damage_min": 25,
+          "damage_max": 40,
+          "penetration": 14,
+          "accuracy": 0.65,
+          "tracking": 0.72,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "mecha": 4,
+        "fighter": 3,
+        "striker": 3,
+        "carrier": 4,
+        "cruiser": 3,
+        "battleship": 3,
+        "destroyer": 2
+      },
+      "escort": null
+    },
+    "mch_zeta": {
+      "name": "MSZ-006 Zeta Gundam",
+      "type": "mecha",
+      "point_cost": 280,
+      "hp": 270,
+      "hardness": 28,
+      "maneuverability": 0.85,
+      "initiative": 9,
+      "weapons": [
+        {
+          "id": "beam_rifle",
+          "name": "Beam Rifle",
+          "category": "anti_mecha",
+          "damage_min": 85,
+          "damage_max": 125,
+          "penetration": 46,
+          "accuracy": 0.76,
+          "tracking": 0.78,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_saber",
+          "name": "Beam Saber",
+          "category": "anti_mecha",
+          "damage_min": 105,
+          "damage_max": 145,
+          "penetration": 50,
+          "accuracy": 0.72,
+          "tracking": 0.74,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "hyper_mega_launcher",
+          "name": "Hyper Mega Launcher",
+          "category": "antiship",
+          "damage_min": 210,
+          "damage_max": 300,
+          "penetration": 84,
+          "accuracy": 0.6,
+          "tracking": 0.3,
+          "shots": 1,
+          "ammo": 5,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "head_vulcan",
+          "name": "Head Vulcan",
+          "category": "anti_mecha",
+          "damage_min": 25,
+          "damage_max": 40,
+          "penetration": 14,
+          "accuracy": 0.65,
+          "tracking": 0.72,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "mecha": 4,
+        "fighter": 3,
+        "striker": 3,
+        "carrier": 4,
+        "cruiser": 3,
+        "battleship": 3,
+        "destroyer": 2
+      },
+      "escort": null
+    },
+    "mch_hyaku_shiki": {
+      "name": "MSN-00100 Hyaku Shiki",
+      "type": "mecha",
+      "point_cost": 240,
+      "hp": 240,
+      "hardness": 26,
+      "maneuverability": 0.72,
+      "initiative": 9,
+      "weapons": [
+        {
+          "id": "beam_rifle",
+          "name": "Beam Rifle",
+          "category": "anti_mecha",
+          "damage_min": 75,
+          "damage_max": 115,
+          "penetration": 42,
+          "accuracy": 0.74,
+          "tracking": 0.76,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_saber",
+          "name": "Beam Saber",
+          "category": "anti_mecha",
+          "damage_min": 95,
+          "damage_max": 135,
+          "penetration": 46,
+          "accuracy": 0.7,
+          "tracking": 0.72,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "mega_bazooka_launcher",
+          "name": "Mega Bazooka Launcher",
+          "category": "antiship",
+          "damage_min": 180,
+          "damage_max": 260,
+          "penetration": 82,
+          "accuracy": 0.58,
+          "tracking": 0.3,
+          "shots": 1,
+          "ammo": 5,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "mecha": 4,
+        "fighter": 3,
+        "striker": 3,
+        "carrier": 4,
+        "cruiser": 3,
+        "battleship": 3,
+        "destroyer": 2
+      },
+      "escort": null
+    },
+    "mch_gaza_c": {
+      "name": "AMX-003 Gaza-C",
+      "type": "mecha",
+      "point_cost": 125,
+      "hp": 170,
+      "hardness": 20,
+      "maneuverability": 0.62,
+      "initiative": 8,
+      "weapons": [
+        {
+          "id": "beam_rifle",
+          "name": "Beam Machine Gun",
+          "category": "anti_mecha",
+          "damage_min": 50,
+          "damage_max": 80,
+          "penetration": 32,
+          "accuracy": 0.72,
+          "tracking": 0.74,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_saber",
+          "name": "Beam Saber",
+          "category": "anti_mecha",
+          "damage_min": 60,
+          "damage_max": 90,
+          "penetration": 34,
+          "accuracy": 0.64,
+          "tracking": 0.66,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "missile_launcher",
+          "name": "Missile Launcher",
+          "category": "antiship",
+          "damage_min": 90,
+          "damage_max": 130,
+          "penetration": 56,
+          "accuracy": 0.5,
+          "tracking": 0.3,
+          "shots": 1,
+          "ammo": 4,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "mecha": 4,
+        "fighter": 3,
+        "striker": 3,
+        "carrier": 3,
+        "cruiser": 2,
+        "battleship": 2
+      },
+      "escort": null
+    },
+    "mch_qubeley": {
+      "name": "AMX-004 Qubeley",
+      "type": "mecha",
+      "point_cost": 310,
+      "hp": 270,
+      "hardness": 28,
+      "maneuverability": 0.7,
+      "initiative": 9,
+      "weapons": [
+        {
+          "id": "funnels",
+          "name": "Funnel Barrage",
+          "category": "anti_mecha",
+          "damage_min": 35,
+          "damage_max": 55,
+          "penetration": 30,
+          "accuracy": 0.75,
+          "tracking": 0.9,
+          "shots": 6,
+          "ammo": 8,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_saber",
+          "name": "Beam Saber",
+          "category": "anti_mecha",
+          "damage_min": 90,
+          "damage_max": 130,
+          "penetration": 46,
+          "accuracy": 0.7,
+          "tracking": 0.72,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "head_mega_cannon",
+          "name": "Mega Particle Cannon",
+          "category": "antiship",
+          "damage_min": 150,
+          "damage_max": 220,
+          "penetration": 78,
+          "accuracy": 0.58,
+          "tracking": 0.32,
+          "shots": 1,
+          "ammo": 4,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "mecha": 4,
+        "fighter": 3,
+        "striker": 3,
+        "carrier": 4,
+        "cruiser": 3,
+        "battleship": 3,
+        "destroyer": 2
+      },
+      "escort": null
+    },
+    "mch_dreissen": {
+      "name": "AMX-009 Dreissen",
+      "type": "mecha",
+      "point_cost": 240,
+      "hp": 300,
+      "hardness": 30,
+      "maneuverability": 0.4,
+      "initiative": 6,
+      "weapons": [
+        {
+          "id": "mega_cannons",
+          "name": "Mega Particle Cannons",
+          "category": "antiship",
+          "damage_min": 170,
+          "damage_max": 260,
+          "penetration": 82,
+          "accuracy": 0.6,
+          "tracking": 0.25,
+          "shots": 2,
+          "ammo": 10,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "beam_saber",
+          "name": "Beam Saber",
+          "category": "anti_mecha",
+          "damage_min": 80,
+          "damage_max": 120,
+          "penetration": 42,
+          "accuracy": 0.6,
+          "tracking": 0.62,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_gatling",
+          "name": "Beam Gatling",
+          "category": "anti_mecha",
+          "damage_min": 40,
+          "damage_max": 65,
+          "penetration": 28,
+          "accuracy": 0.66,
+          "tracking": 0.7,
+          "shots": 3,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "carrier": 4,
+        "battleship": 4,
+        "cruiser": 3,
+        "destroyer": 2,
+        "mecha": 3,
+        "fighter": 2,
+        "striker": 2
+      },
+      "escort": null
+    },
+    "mch_zaku_iii": {
+      "name": "AMX-011 Zaku III",
+      "type": "mecha",
+      "point_cost": 150,
+      "hp": 210,
+      "hardness": 23,
+      "maneuverability": 0.66,
+      "initiative": 8,
+      "weapons": [
+        {
+          "id": "beam_machine_gun",
+          "name": "Beam Machine Gun",
+          "category": "anti_mecha",
+          "damage_min": 55,
+          "damage_max": 85,
+          "penetration": 34,
+          "accuracy": 0.72,
+          "tracking": 0.74,
+          "shots": 3,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_saber",
+          "name": "Beam Saber",
+          "category": "anti_mecha",
+          "damage_min": 70,
+          "damage_max": 105,
+          "penetration": 40,
+          "accuracy": 0.66,
+          "tracking": 0.68,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_bazooka",
+          "name": "Beam Bazooka",
+          "category": "antiship",
+          "damage_min": 130,
+          "damage_max": 190,
+          "penetration": 68,
+          "accuracy": 0.55,
+          "tracking": 0.32,
+          "shots": 1,
+          "ammo": 6,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "mecha": 4,
+        "fighter": 3,
+        "striker": 3,
+        "carrier": 3,
+        "cruiser": 2,
+        "battleship": 2
+      },
+      "escort": null
+    },
+    "mch_jegan": {
+      "name": "RGM-89 Jegan",
+      "type": "mecha",
+      "point_cost": 135,
+      "hp": 185,
+      "hardness": 22,
+      "maneuverability": 0.68,
+      "initiative": 8,
+      "weapons": [
+        {
+          "id": "beam_rifle",
+          "name": "Beam Rifle",
+          "category": "anti_mecha",
+          "damage_min": 60,
+          "damage_max": 90,
+          "penetration": 36,
+          "accuracy": 0.72,
+          "tracking": 0.74,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_saber",
+          "name": "Beam Saber",
+          "category": "anti_mecha",
+          "damage_min": 75,
+          "damage_max": 110,
+          "penetration": 40,
+          "accuracy": 0.66,
+          "tracking": 0.68,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "bazooka",
+          "name": "Bazooka",
+          "category": "antiship",
+          "damage_min": 110,
+          "damage_max": 160,
+          "penetration": 62,
+          "accuracy": 0.52,
+          "tracking": 0.34,
+          "shots": 1,
+          "ammo": 5,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "mecha": 4,
+        "fighter": 3,
+        "striker": 3,
+        "carrier": 3,
+        "cruiser": 2,
+        "battleship": 2
+      },
+      "escort": null
+    },
+    "mch_re_gz": {
+      "name": "RGZ-91 Re-GZ",
+      "type": "mecha",
+      "point_cost": 200,
+      "hp": 235,
+      "hardness": 27,
+      "maneuverability": 0.75,
+      "initiative": 9,
+      "weapons": [
+        {
+          "id": "beam_rifle",
+          "name": "Beam Rifle",
+          "category": "anti_mecha",
+          "damage_min": 75,
+          "damage_max": 115,
+          "penetration": 42,
+          "accuracy": 0.74,
+          "tracking": 0.76,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_saber",
+          "name": "Beam Saber",
+          "category": "anti_mecha",
+          "damage_min": 90,
+          "damage_max": 130,
+          "penetration": 46,
+          "accuracy": 0.7,
+          "tracking": 0.72,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "hyper_bazooka",
+          "name": "Hyper Bazooka",
+          "category": "antiship",
+          "damage_min": 140,
+          "damage_max": 205,
+          "penetration": 74,
+          "accuracy": 0.56,
+          "tracking": 0.32,
+          "shots": 1,
+          "ammo": 5,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "mecha": 4,
+        "fighter": 3,
+        "striker": 3,
+        "carrier": 4,
+        "cruiser": 3,
+        "battleship": 3,
+        "destroyer": 2
+      },
+      "escort": null
+    },
+    "mch_sazabi": {
+      "name": "MSN-04 Sazabi",
+      "type": "mecha",
+      "point_cost": 360,
+      "hp": 300,
+      "hardness": 32,
+      "maneuverability": 0.75,
+      "initiative": 9,
+      "weapons": [
+        {
+          "id": "beam_shot_rifle",
+          "name": "Beam Shot Rifle",
+          "category": "anti_mecha",
+          "damage_min": 100,
+          "damage_max": 150,
+          "penetration": 52,
+          "accuracy": 0.74,
+          "tracking": 0.76,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "funnels",
+          "name": "Funnel Barrage",
+          "category": "anti_mecha",
+          "damage_min": 45,
+          "damage_max": 70,
+          "penetration": 38,
+          "accuracy": 0.78,
+          "tracking": 0.9,
+          "shots": 6,
+          "ammo": 8,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_tomahawk",
+          "name": "Beam Tomahawk",
+          "category": "anti_mecha",
+          "damage_min": 120,
+          "damage_max": 170,
+          "penetration": 55,
+          "accuracy": 0.68,
+          "tracking": 0.7,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "mega_particle_cannon",
+          "name": "Mega Particle Cannon",
+          "category": "antiship",
+          "damage_min": 180,
+          "damage_max": 260,
+          "penetration": 84,
+          "accuracy": 0.6,
+          "tracking": 0.3,
+          "shots": 1,
+          "ammo": 6,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "mecha": 4,
+        "fighter": 3,
+        "striker": 3,
+        "carrier": 4,
+        "cruiser": 3,
+        "battleship": 3,
+        "destroyer": 2
+      },
+      "escort": null
+    },
+    "mch_nu_gundam": {
+      "name": "RX-93 Nu Gundam",
+      "type": "mecha",
+      "point_cost": 420,
+      "hp": 320,
+      "hardness": 34,
+      "maneuverability": 0.82,
+      "initiative": 10,
+      "weapons": [
+        {
+          "id": "beam_rifle",
+          "name": "Beam Rifle",
+          "category": "anti_mecha",
+          "damage_min": 110,
+          "damage_max": 160,
+          "penetration": 54,
+          "accuracy": 0.78,
+          "tracking": 0.8,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_saber",
+          "name": "Beam Saber",
+          "category": "anti_mecha",
+          "damage_min": 130,
+          "damage_max": 180,
+          "penetration": 58,
+          "accuracy": 0.74,
+          "tracking": 0.76,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "fin_funnels",
+          "name": "Fin Funnels",
+          "category": "anti_mecha",
+          "damage_min": 45,
+          "damage_max": 70,
+          "penetration": 38,
+          "accuracy": 0.8,
+          "tracking": 0.92,
+          "shots": 6,
+          "ammo": 8,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "hyper_bazooka",
+          "name": "Hyper Bazooka",
+          "category": "antiship",
+          "damage_min": 180,
+          "damage_max": 260,
+          "penetration": 82,
+          "accuracy": 0.6,
+          "tracking": 0.32,
+          "shots": 1,
+          "ammo": 4,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "mecha": 4,
+        "fighter": 3,
+        "striker": 3,
+        "carrier": 4,
+        "cruiser": 3,
+        "battleship": 3,
+        "destroyer": 2
+      },
+      "escort": null
+    },
+    "mch_kshatriya": {
+      "name": "NZ-666 Kshatriya",
+      "type": "mecha",
+      "point_cost": 300,
+      "hp": 260,
+      "hardness": 27,
+      "maneuverability": 0.78,
+      "initiative": 9,
+      "weapons": [
+        {
+          "id": "funnel_bits",
+          "name": "Funnel Bits",
+          "category": "anti_mecha",
+          "damage_min": 40,
+          "damage_max": 60,
+          "penetration": 34,
+          "accuracy": 0.76,
+          "tracking": 0.9,
+          "shots": 8,
+          "ammo": 8,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_saber",
+          "name": "Beam Saber",
+          "category": "anti_mecha",
+          "damage_min": 85,
+          "damage_max": 125,
+          "penetration": 44,
+          "accuracy": 0.7,
+          "tracking": 0.72,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "mega_beam_cannon",
+          "name": "Mega Beam Cannon",
+          "category": "antiship",
+          "damage_min": 160,
+          "damage_max": 230,
+          "penetration": 78,
+          "accuracy": 0.58,
+          "tracking": 0.3,
+          "shots": 1,
+          "ammo": 6,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "mecha": 4,
+        "fighter": 3,
+        "striker": 3,
+        "carrier": 4,
+        "cruiser": 3,
+        "battleship": 3,
+        "destroyer": 2
+      },
+      "escort": null
+    },
+    "mch_unicorn": {
+      "name": "RX-0 Unicorn Gundam",
+      "type": "mecha",
+      "point_cost": 480,
+      "hp": 340,
+      "hardness": 36,
+      "maneuverability": 0.85,
+      "initiative": 10,
+      "weapons": [
+        {
+          "id": "beam_magnum",
+          "name": "Beam Magnum",
+          "category": "anti_mecha",
+          "damage_min": 120,
+          "damage_max": 180,
+          "penetration": 58,
+          "accuracy": 0.78,
+          "tracking": 0.78,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_saber",
+          "name": "Beam Saber",
+          "category": "anti_mecha",
+          "damage_min": 140,
+          "damage_max": 200,
+          "penetration": 62,
+          "accuracy": 0.75,
+          "tracking": 0.76,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_magnum_charged",
+          "name": "Beam Magnum (Charged)",
+          "category": "antiship",
+          "damage_min": 200,
+          "damage_max": 290,
+          "penetration": 86,
+          "accuracy": 0.6,
+          "tracking": 0.3,
+          "shots": 1,
+          "ammo": 6,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "mecha": 4,
+        "fighter": 3,
+        "striker": 3,
+        "carrier": 4,
+        "cruiser": 3,
+        "battleship": 3,
+        "destroyer": 2
+      },
+      "escort": null
+    },
+    "mch_sinanju": {
+      "name": "MSN-06S Sinanju",
+      "type": "mecha",
+      "point_cost": 370,
+      "hp": 320,
+      "hardness": 33,
+      "maneuverability": 0.74,
+      "initiative": 9,
+      "weapons": [
+        {
+          "id": "beam_rifle",
+          "name": "Beam Rifle",
+          "category": "anti_mecha",
+          "damage_min": 100,
+          "damage_max": 145,
+          "penetration": 50,
+          "accuracy": 0.74,
+          "tracking": 0.76,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_axe",
+          "name": "Beam Axe",
+          "category": "anti_mecha",
+          "damage_min": 120,
+          "damage_max": 170,
+          "penetration": 55,
+          "accuracy": 0.68,
+          "tracking": 0.7,
+          "shots": 1,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "beam_cannon",
+          "name": "Beam Cannon",
+          "category": "antiship",
+          "damage_min": 170,
+          "damage_max": 250,
+          "penetration": 82,
+          "accuracy": 0.6,
+          "tracking": 0.3,
+          "shots": 1,
+          "ammo": 6,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "mecha": 4,
+        "fighter": 3,
+        "striker": 3,
+        "carrier": 4,
+        "cruiser": 3,
+        "battleship": 3,
+        "destroyer": 2
+      },
+      "escort": null
+    },
+    "ftr_dopp": {
+      "name": "Dopp Fighter",
+      "type": "fighter",
+      "point_cost": 35,
+      "hp": 48,
+      "hardness": 0,
+      "maneuverability": 0.5,
+      "initiative": 10,
+      "weapons": [
+        {
+          "id": "machine_cannon",
+          "name": "Machine Cannon",
+          "category": "aa",
+          "damage_min": 14,
+          "damage_max": 22,
+          "penetration": 4,
+          "accuracy": 0.7,
+          "tracking": 0.68,
+          "shots": 3,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "missile_pod",
+          "name": "Missile Pod",
+          "category": "antiship",
+          "damage_min": 80,
+          "damage_max": 115,
+          "penetration": 52,
+          "accuracy": 0.52,
+          "tracking": 0.3,
+          "shots": 1,
+          "ammo": 4,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "fighter": 4,
+        "striker": 4,
+        "mecha": 2,
+        "carrier": 3,
+        "cruiser": 2,
+        "battleship": 2
+      },
+      "escort": null
+    },
+    "ftr_core_fighter": {
+      "name": "FF-X7 Core Fighter",
+      "type": "fighter",
+      "point_cost": 32,
+      "hp": 42,
+      "hardness": 0,
+      "maneuverability": 0.55,
+      "initiative": 10,
+      "weapons": [
+        {
+          "id": "vulcan",
+          "name": "Vulcan Cannon",
+          "category": "aa",
+          "damage_min": 12,
+          "damage_max": 20,
+          "penetration": 3,
+          "accuracy": 0.68,
+          "tracking": 0.7,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "missile_pod",
+          "name": "Missile Pod",
+          "category": "antiship",
+          "damage_min": 70,
+          "damage_max": 105,
+          "penetration": 48,
+          "accuracy": 0.5,
+          "tracking": 0.28,
+          "shots": 1,
+          "ammo": 4,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "fighter": 4,
+        "striker": 4,
+        "mecha": 3,
+        "carrier": 3,
+        "cruiser": 2,
+        "battleship": 2
+      },
+      "escort": null
+    },
+    "ftr_tin_cod": {
+      "name": "FF-6 TIN Cod",
+      "type": "fighter",
+      "point_cost": 38,
+      "hp": 46,
+      "hardness": 0,
+      "maneuverability": 0.52,
+      "initiative": 10,
+      "weapons": [
+        {
+          "id": "vulcan",
+          "name": "Vulcan Cannon",
+          "category": "aa",
+          "damage_min": 14,
+          "damage_max": 22,
+          "penetration": 4,
+          "accuracy": 0.7,
+          "tracking": 0.7,
+          "shots": 3,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "antimecha_missile",
+          "name": "Anti-Mecha Missile",
+          "category": "anti_mecha",
+          "damage_min": 55,
+          "damage_max": 85,
+          "penetration": 26,
+          "accuracy": 0.6,
+          "tracking": 0.65,
+          "shots": 1,
+          "ammo": 4,
+          "valid_targets": "small_craft"
+        },
+        {
+          "id": "antiship_missile",
+          "name": "Anti-Ship Missile",
+          "category": "antiship",
+          "damage_min": 80,
+          "damage_max": 120,
+          "penetration": 55,
+          "accuracy": 0.55,
+          "tracking": 0.3,
+          "shots": 1,
+          "ammo": 4,
+          "valid_targets": "capitals"
+        }
+      ],
+      "target_priorities": {
+        "fighter": 4,
+        "striker": 4,
+        "mecha": 3,
+        "carrier": 4,
+        "cruiser": 3,
+        "battleship": 2,
+        "destroyer": 2,
+        "transport": 1
+      },
+      "escort": null
+    },
+    "str_fly_manta": {
+      "name": "Fly Manta",
+      "type": "striker",
+      "point_cost": 48,
+      "hp": 65,
+      "hardness": 2,
+      "maneuverability": 0.4,
+      "initiative": 7,
+      "weapons": [
+        {
+          "id": "ship_killer",
+          "name": "Anti-Ship Missiles",
+          "category": "antiship",
+          "damage_min": 105,
+          "damage_max": 155,
+          "penetration": 62,
+          "accuracy": 0.58,
+          "tracking": 0.28,
+          "shots": 2,
+          "ammo": 4,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "machine_cannon",
+          "name": "Machine Cannon",
+          "category": "aa",
+          "damage_min": 12,
+          "damage_max": 18,
+          "penetration": 3,
+          "accuracy": 0.55,
+          "tracking": 0.5,
+          "shots": 2,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "battleship": 4,
+        "carrier": 5,
+        "cruiser": 3,
+        "destroyer": 1,
+        "transport": 2,
+        "fighter": 1,
+        "striker": 1,
+        "mecha": 1
+      },
+      "escort": null
+    },
+    "crs_argama": {
+      "name": "Argama-class Assault Cruiser",
+      "type": "cruiser",
+      "point_cost": 520,
+      "hp": 1150,
+      "hardness": 38,
+      "maneuverability": 0.12,
+      "initiative": 4,
+      "rearm_capacity": 6,
+      "hangar_capacity": 10,
+      "launch_per_round": 3,
+      "weapons": [
+        {
+          "id": "main_battery",
+          "name": "Twin Mega Particle Cannons",
+          "category": "antiship",
+          "damage_min": 100,
+          "damage_max": 155,
+          "penetration": 60,
+          "accuracy": 0.66,
+          "tracking": 0.15,
+          "shots": 3,
+          "ammo": null,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "missile_launchers",
+          "name": "Missile Launchers",
+          "category": "antiship",
+          "damage_min": 55,
+          "damage_max": 85,
+          "penetration": 44,
+          "accuracy": 0.6,
+          "tracking": 0.25,
+          "shots": 4,
+          "ammo": 12,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "flak",
+          "name": "Anti-Aircraft Guns",
+          "category": "aa",
+          "damage_min": 18,
+          "damage_max": 30,
+          "penetration": 13,
+          "accuracy": 0.76,
+          "tracking": 0.85,
+          "shots": 5,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "cruiser": 4,
+        "battleship": 3,
+        "carrier": 4,
+        "destroyer": 3,
+        "transport": 1,
+        "fighter": 2,
+        "striker": 2,
+        "mecha": 2
+      },
+      "escort": null
+    },
+    "crs_radish": {
+      "name": "Radish-class Cruiser",
+      "type": "cruiser",
+      "point_cost": 440,
+      "hp": 1000,
+      "hardness": 37,
+      "maneuverability": 0.12,
+      "initiative": 4,
+      "rearm_capacity": 0,
+      "hangar_capacity": 6,
+      "launch_per_round": 2,
+      "weapons": [
+        {
+          "id": "main_battery",
+          "name": "Mega Particle Cannons",
+          "category": "antiship",
+          "damage_min": 95,
+          "damage_max": 145,
+          "penetration": 58,
+          "accuracy": 0.65,
+          "tracking": 0.15,
+          "shots": 3,
+          "ammo": null,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "flak",
+          "name": "Anti-Aircraft Guns",
+          "category": "aa",
+          "damage_min": 18,
+          "damage_max": 30,
+          "penetration": 13,
+          "accuracy": 0.76,
+          "tracking": 0.85,
+          "shots": 5,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "cruiser": 4,
+        "battleship": 3,
+        "carrier": 4,
+        "destroyer": 3,
+        "transport": 1,
+        "fighter": 2,
+        "striker": 2,
+        "mecha": 2
+      },
+      "escort": {
+        "chance": 0.35,
+        "max_intercepts_per_round": 2,
+        "protects": [
+          "battleship",
+          "carrier",
+          "transport"
+        ]
+      }
+    },
+    "crs_alexandria": {
+      "name": "Alexandria-class Cruiser",
+      "type": "cruiser",
+      "point_cost": 480,
+      "hp": 1050,
+      "hardness": 38,
+      "maneuverability": 0.1,
+      "initiative": 4,
+      "rearm_capacity": 0,
+      "hangar_capacity": 8,
+      "launch_per_round": 3,
+      "weapons": [
+        {
+          "id": "main_battery",
+          "name": "Mega Particle Cannons",
+          "category": "antiship",
+          "damage_min": 100,
+          "damage_max": 150,
+          "penetration": 60,
+          "accuracy": 0.66,
+          "tracking": 0.15,
+          "shots": 3,
+          "ammo": null,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "missile_launchers",
+          "name": "Missile Launchers",
+          "category": "antiship",
+          "damage_min": 55,
+          "damage_max": 85,
+          "penetration": 44,
+          "accuracy": 0.6,
+          "tracking": 0.25,
+          "shots": 4,
+          "ammo": 12,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "flak",
+          "name": "Anti-Aircraft Guns",
+          "category": "aa",
+          "damage_min": 18,
+          "damage_max": 30,
+          "penetration": 13,
+          "accuracy": 0.76,
+          "tracking": 0.85,
+          "shots": 5,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "cruiser": 4,
+        "battleship": 3,
+        "carrier": 4,
+        "destroyer": 3,
+        "transport": 1,
+        "fighter": 2,
+        "striker": 2,
+        "mecha": 2
+      },
+      "escort": {
+        "chance": 0.3,
+        "max_intercepts_per_round": 2,
+        "protects": [
+          "battleship",
+          "carrier",
+          "transport"
+        ]
+      }
+    },
+    "crs_drake": {
+      "name": "Drake-class Cruiser",
+      "type": "cruiser",
+      "point_cost": 380,
+      "hp": 850,
+      "hardness": 34,
+      "maneuverability": 0.14,
+      "initiative": 5,
+      "rearm_capacity": 0,
+      "hangar_capacity": 4,
+      "launch_per_round": 2,
+      "weapons": [
+        {
+          "id": "main_battery",
+          "name": "Mega Particle Cannons",
+          "category": "antiship",
+          "damage_min": 90,
+          "damage_max": 135,
+          "penetration": 54,
+          "accuracy": 0.64,
+          "tracking": 0.15,
+          "shots": 3,
+          "ammo": null,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "flak",
+          "name": "Anti-Aircraft Guns",
+          "category": "aa",
+          "damage_min": 16,
+          "damage_max": 26,
+          "penetration": 12,
+          "accuracy": 0.74,
+          "tracking": 0.85,
+          "shots": 4,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "cruiser": 4,
+        "battleship": 3,
+        "carrier": 4,
+        "destroyer": 3,
+        "transport": 1,
+        "fighter": 2,
+        "striker": 2,
+        "mecha": 2
+      },
+      "escort": {
+        "chance": 0.4,
+        "max_intercepts_per_round": 2,
+        "protects": [
+          "battleship",
+          "carrier",
+          "transport"
+        ]
+      }
+    },
+    "dst_musai_kai": {
+      "name": "Musai-class Destroyer (Late Type)",
+      "type": "destroyer",
+      "point_cost": 340,
+      "hp": 720,
+      "hardness": 32,
+      "maneuverability": 0.16,
+      "initiative": 5,
+      "rearm_capacity": 4,
+      "hangar_capacity": 8,
+      "launch_per_round": 3,
+      "weapons": [
+        {
+          "id": "main_battery",
+          "name": "Mega Particle Cannons",
+          "category": "antiship",
+          "damage_min": 100,
+          "damage_max": 150,
+          "penetration": 60,
+          "accuracy": 0.64,
+          "tracking": 0.15,
+          "shots": 3,
+          "ammo": null,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "missile_launchers",
+          "name": "Missile Launchers",
+          "category": "antiship",
+          "damage_min": 60,
+          "damage_max": 90,
+          "penetration": 46,
+          "accuracy": 0.6,
+          "tracking": 0.25,
+          "shots": 4,
+          "ammo": 12,
+          "valid_targets": "capitals"
+        },
+        {
+          "id": "flak",
+          "name": "Anti-Aircraft Guns",
+          "category": "aa",
+          "damage_min": 22,
+          "damage_max": 34,
+          "penetration": 15,
+          "accuracy": 0.76,
+          "tracking": 0.85,
+          "shots": 6,
+          "ammo": null,
+          "valid_targets": "small_craft"
+        }
+      ],
+      "target_priorities": {
+        "cruiser": 3,
+        "battleship": 2,
+        "carrier": 4,
+        "destroyer": 3,
+        "transport": 2,
+        "fighter": 1,
+        "striker": 1,
+        "mecha": 1
+      },
+      "escort": {
+        "chance": 0.45,
+        "max_intercepts_per_round": 2,
+        "protects": [
+          "battleship",
+          "carrier",
+          "cruiser",
+          "transport"
+        ]
+      }
+    }
+  }
+}
