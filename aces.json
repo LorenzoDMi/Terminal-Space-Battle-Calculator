@@ -5,6 +5,342 @@
       "accuracy_bonus": 0.08,
       "evasion_bonus": 0.05,
       "hp_bonus": 15
+    },
+    "ace_char": {
+      "name": "Char Aznable",
+      "accuracy_bonus": 0.12,
+      "evasion_bonus": 0.15,
+      "hp_bonus": 20
+    },
+    "ace_amuro": {
+      "name": "Amuro Ray",
+      "accuracy_bonus": 0.15,
+      "evasion_bonus": 0.12,
+      "hp_bonus": 25
+    },
+    "ace_ral": {
+      "name": "Ramba Ral",
+      "accuracy_bonus": 0.09,
+      "evasion_bonus": 0.06,
+      "hp_bonus": 20
+    },
+    "ace_matsunaga": {
+      "name": "Shin Matsunaga",
+      "accuracy_bonus": 0.08,
+      "evasion_bonus": 0.07,
+      "hp_bonus": 15
+    },
+    "ace_gato": {
+      "name": "Anavel Gato",
+      "accuracy_bonus": 0.11,
+      "evasion_bonus": 0.08,
+      "hp_bonus": 20
+    },
+    "ace_kou": {
+      "name": "Kou Uraki",
+      "accuracy_bonus": 0.08,
+      "evasion_bonus": 0.08,
+      "hp_bonus": 15
+    },
+    "ace_cima": {
+      "name": "Cima Garahau",
+      "accuracy_bonus": 0.09,
+      "evasion_bonus": 0.1,
+      "hp_bonus": 15
+    },
+    "ace_lalah": {
+      "name": "Lalah Sune",
+      "accuracy_bonus": 0.12,
+      "evasion_bonus": 0.1,
+      "hp_bonus": 5
+    },
+    "ace_bernie": {
+      "name": "Bernard Wiseman",
+      "accuracy_bonus": 0.05,
+      "evasion_bonus": 0.05,
+      "hp_bonus": 10
+    },
+    "ace_kamille": {
+      "name": "Kamille Bidan",
+      "accuracy_bonus": 0.13,
+      "evasion_bonus": 0.1,
+      "hp_bonus": 20
+    },
+    "ace_jerid": {
+      "name": "Jerid Messa",
+      "accuracy_bonus": 0.07,
+      "evasion_bonus": 0.06,
+      "hp_bonus": 10
+    },
+    "ace_scirocco": {
+      "name": "Paptimus Scirocco",
+      "accuracy_bonus": 0.12,
+      "evasion_bonus": 0.09,
+      "hp_bonus": 15
+    },
+    "ace_judau": {
+      "name": "Judau Ashta",
+      "accuracy_bonus": 0.1,
+      "evasion_bonus": 0.09,
+      "hp_bonus": 20
+    },
+    "ace_haman": {
+      "name": "Haman Karn",
+      "accuracy_bonus": 0.1,
+      "evasion_bonus": 0.1,
+      "hp_bonus": 10
+    },
+    "ace_glemy": {
+      "name": "Glemy Toto",
+      "accuracy_bonus": 0.08,
+      "evasion_bonus": 0.07,
+      "hp_bonus": 15
+    },
+    "ace_gyunei": {
+      "name": "Gyunei Guss",
+      "accuracy_bonus": 0.11,
+      "evasion_bonus": 0.08,
+      "hp_bonus": 10
+    },
+    "ace_banagher": {
+      "name": "Banagher Links",
+      "accuracy_bonus": 0.12,
+      "evasion_bonus": 0.1,
+      "hp_bonus": 25
+    },
+    "ace_frontal": {
+      "name": "Full Frontal",
+      "accuracy_bonus": 0.14,
+      "evasion_bonus": 0.12,
+      "hp_bonus": 20
+    },
+    "ace_marida": {
+      "name": "Marida Cruz",
+      "accuracy_bonus": 0.11,
+      "evasion_bonus": 0.09,
+      "hp_bonus": 10
+    },
+    "ace_kai": {
+      "name": "Kai Shiden",
+      "accuracy_bonus": 0.05,
+      "evasion_bonus": 0.04,
+      "hp_bonus": 10
+    },
+    "ace_sleggar": {
+      "name": "Sleggar Law",
+      "accuracy_bonus": 0.06,
+      "evasion_bonus": 0.05,
+      "hp_bonus": 10
+    },
+    "ace_sayla": {
+      "name": "Sayla Mass",
+      "accuracy_bonus": 0.07,
+      "evasion_bonus": 0.06,
+      "hp_bonus": 5
+    },
+    "ace_ryu": {
+      "name": "Ryu Jose",
+      "accuracy_bonus": 0.07,
+      "evasion_bonus": 0.05,
+      "hp_bonus": 10
+    },
+    "ace_hayato": {
+      "name": "Hayato Kobayashi",
+      "accuracy_bonus": 0.05,
+      "evasion_bonus": 0.05,
+      "hp_bonus": 10
+    },
+    "ace_matilda": {
+      "name": "Matilda Ajan",
+      "accuracy_bonus": 0.05,
+      "evasion_bonus": 0.04,
+      "hp_bonus": 5
+    },
+    "ace_dozle": {
+      "name": "Dozle Zabi",
+      "accuracy_bonus": 0.08,
+      "evasion_bonus": 0.03,
+      "hp_bonus": 35
+    },
+    "ace_garma": {
+      "name": "Garma Zabi",
+      "accuracy_bonus": 0.05,
+      "evasion_bonus": 0.05,
+      "hp_bonus": 10
+    },
+    "ace_gaia": {
+      "name": "Gaia",
+      "accuracy_bonus": 0.08,
+      "evasion_bonus": 0.07,
+      "hp_bonus": 15
+    },
+    "ace_mash": {
+      "name": "Mash",
+      "accuracy_bonus": 0.07,
+      "evasion_bonus": 0.08,
+      "hp_bonus": 15
+    },
+    "ace_ortega": {
+      "name": "Ortega",
+      "accuracy_bonus": 0.08,
+      "evasion_bonus": 0.06,
+      "hp_bonus": 15
+    },
+    "ace_chris": {
+      "name": "Christina Mackenzie",
+      "accuracy_bonus": 0.07,
+      "evasion_bonus": 0.06,
+      "hp_bonus": 10
+    },
+    "ace_garcia": {
+      "name": "Gabriel Ramirez Garcia",
+      "accuracy_bonus": 0.07,
+      "evasion_bonus": 0.05,
+      "hp_bonus": 10
+    },
+    "ace_eiphar": {
+      "name": "Eiphar Synapse",
+      "accuracy_bonus": 0.06,
+      "evasion_bonus": 0.05,
+      "hp_bonus": 15
+    },
+    "ace_chuck": {
+      "name": "Chuck Keith",
+      "accuracy_bonus": 0.05,
+      "evasion_bonus": 0.05,
+      "hp_bonus": 10
+    },
+    "ace_delaz": {
+      "name": "Aiguille Delaz",
+      "accuracy_bonus": 0.07,
+      "evasion_bonus": 0.04,
+      "hp_bonus": 30
+    },
+    "ace_emma": {
+      "name": "Emma Sheen",
+      "accuracy_bonus": 0.08,
+      "evasion_bonus": 0.07,
+      "hp_bonus": 15
+    },
+    "ace_fa": {
+      "name": "Fa Yuiry",
+      "accuracy_bonus": 0.06,
+      "evasion_bonus": 0.06,
+      "hp_bonus": 10
+    },
+    "ace_reccoa": {
+      "name": "Reccoa Londe",
+      "accuracy_bonus": 0.06,
+      "evasion_bonus": 0.06,
+      "hp_bonus": 10
+    },
+    "ace_katz": {
+      "name": "Katz Kobayashi",
+      "accuracy_bonus": 0.05,
+      "evasion_bonus": 0.05,
+      "hp_bonus": 10
+    },
+    "ace_yazan": {
+      "name": "Yazan Gable",
+      "accuracy_bonus": 0.07,
+      "evasion_bonus": 0.04,
+      "hp_bonus": 20
+    },
+    "ace_gates": {
+      "name": "Gates Capa",
+      "accuracy_bonus": 0.08,
+      "evasion_bonus": 0.06,
+      "hp_bonus": 15
+    },
+    "ace_jamitov": {
+      "name": "Jamitov Hymem",
+      "accuracy_bonus": 0.08,
+      "evasion_bonus": 0.06,
+      "hp_bonus": 15
+    },
+    "ace_bask": {
+      "name": "Bask Om",
+      "accuracy_bonus": 0.07,
+      "evasion_bonus": 0.04,
+      "hp_bonus": 20
+    },
+    "ace_sarah": {
+      "name": "Sarah Zabiarov",
+      "accuracy_bonus": 0.09,
+      "evasion_bonus": 0.07,
+      "hp_bonus": 10
+    },
+    "ace_four": {
+      "name": "Four Murasame",
+      "accuracy_bonus": 0.09,
+      "evasion_bonus": 0.07,
+      "hp_bonus": 10
+    },
+    "ace_rosamia": {
+      "name": "Rosamia Badam",
+      "accuracy_bonus": 0.09,
+      "evasion_bonus": 0.08,
+      "hp_bonus": 10
+    },
+    "ace_mouar": {
+      "name": "Mouar Pharaoh",
+      "accuracy_bonus": 0.06,
+      "evasion_bonus": 0.05,
+      "hp_bonus": 10
+    },
+    "ace_elpeo": {
+      "name": "Elpeo Puru",
+      "accuracy_bonus": 0.09,
+      "evasion_bonus": 0.09,
+      "hp_bonus": 5
+    },
+    "ace_puru_two": {
+      "name": "Puru Two",
+      "accuracy_bonus": 0.1,
+      "evasion_bonus": 0.09,
+      "hp_bonus": 5
+    },
+    "ace_mashymre": {
+      "name": "Mashymre Cello",
+      "accuracy_bonus": 0.09,
+      "evasion_bonus": 0.07,
+      "hp_bonus": 10
+    },
+    "ace_quess": {
+      "name": "Quess Paraya",
+      "accuracy_bonus": 0.11,
+      "evasion_bonus": 0.09,
+      "hp_bonus": 5
+    },
+    "ace_hathaway": {
+      "name": "Hathaway Noa",
+      "accuracy_bonus": 0.09,
+      "evasion_bonus": 0.08,
+      "hp_bonus": 10
+    },
+    "ace_chan": {
+      "name": "Chan Agi",
+      "accuracy_bonus": 0.06,
+      "evasion_bonus": 0.05,
+      "hp_bonus": 10
+    },
+    "ace_angelo": {
+      "name": "Angelo Sauper",
+      "accuracy_bonus": 0.09,
+      "evasion_bonus": 0.09,
+      "hp_bonus": 15
+    },
+    "ace_martha": {
+      "name": "Martha Vist Carbine",
+      "accuracy_bonus": 0.05,
+      "evasion_bonus": 0.05,
+      "hp_bonus": 10
+    },
+    "ace_loni": {
+      "name": "Loni Garvey",
+      "accuracy_bonus": 0.06,
+      "evasion_bonus": 0.05,
+      "hp_bonus": 15
     }
   }
 }
